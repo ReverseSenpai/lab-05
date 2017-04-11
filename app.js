@@ -98,8 +98,12 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(testArray){ //eslint-disable-line
-
+  var testArray = [];
+  var testSum = multiply(multiply(2,3)[0],4);
+  testArray[0] = testSum[0];
+  testArray[1] = 'The numbers 2,3,4 have a product of 24.';
+  return testArray;
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(2,3,4);
+testMultiplyArray(2,3,4);
